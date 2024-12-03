@@ -1,0 +1,19 @@
+.gallery{
+    text-align: center;
+}
+
+.gallery-item{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    transition: transform 0.2 ease-in-out;
+}
+.gallery-item:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 100%;
+    border-radius: 8px;
+}
