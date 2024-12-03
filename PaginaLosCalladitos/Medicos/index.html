@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <label for="">NOMBRE: </label>
+        <input type="text"> <br>
+        <label for="">DIRECCION: </label>
+        <input type="text"> <br>
+        <label for="">CELULAR: </label>
+        <input type="text"> <br>
+        <label for="">EMAIL: </label>
+        <input type="text"> <br> <br>
+
+        <label for="">Especialidad Médica: </label>
+        <input type="text" name="lista" list="especialidad">
+        
+        <datalits id="especialidad">
+            <option label="MedicoGeneral">MÉDICO GENERAL</option>
+            <option label="Traumatologo">TRAUMATOLOGO</option>
+            <option label="Dermatologo">DERMATOLOGO</option>
+            <option label="Nutricionista">NUTRICIONISTA</option>
+        </datalits><br><br> 
+
+        <label for="">FECHA</label>
+        <input type="date"> 
+        <label for="">HORA</label>
+        <input type="time">
+    
+        <br>
+        <br>
+
+        <input type="submit" value="CONFIRMAR">
+
+    </form>
+
+</body>
+</html>

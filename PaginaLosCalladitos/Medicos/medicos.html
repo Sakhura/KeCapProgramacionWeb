@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Médico</title>
+    <style>
+        /* Estilo general para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo para el contenedor del formulario */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para los encabezados */
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para las etiquetas */
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Estilo para los campos de entrada */
+        input[type="text"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el campo de la lista de especialidades */
+        input[list] {
+            width: 100%;
+        }
+
+        /* Estilo para el botón de enviar */
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        /* Efecto al pasar el ratón por el botón */
+        input[type="submit"]:hover {
+            background-color: #004d99;
+        }
+
+        /* Estilo para los <datalist> */
+        datalist {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Formulario Médico</h1>
+        
+        <label for="nombre">NOMBRE:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="direccion">DIRECCION:</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="celular">CELULAR:</label>
+        <input type="text" id="celular" name="celular">
+
+        <label for="email">EMAIL:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="especialidad">ESPECIALIDAD MÉDICA:</label>
+        <input type="text" id="especialidad" name="especialidad" list="especialidad">
+
+        <datalist id="especialidad">
+            <option value="MÉDICO GENERAL"></option>
+            <option value="TRAUMATÓLOGO"></option>
+            <option value="DERMATÓLOGO"></option>
+            <option value="NUTRICIONISTA"></option>
+        </datalist>
+
+        <label for="fecha">FECHA:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="hora">HORA:</label>
+        <input type="time" id="hora" name="hora">
+
+        <input type="submit" value="CONFIRMAR">
+    </form>
+</body>
+</html>
