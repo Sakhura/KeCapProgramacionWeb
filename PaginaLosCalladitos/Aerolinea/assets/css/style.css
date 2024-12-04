@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #91c77b;
+}
+
+.nav.link, .btn{
+    color: #FFFFFF;
+}
+
+#IniciarSesion{
+    background-color: #FFFF33;
+    border-radius: 20px;
+}
+
+.card{
+    background-color: #1c5dc4;
+}
+
+.page-item{
+    color: #051B54;
+}
+
+#list a{
+    color: #051B54;
+}
+
+#image a{
+    text-decoration: none;
+}
+
+#form{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar-brand{
+    font-family: Arial, Helvetica, sans-serif;
+}
