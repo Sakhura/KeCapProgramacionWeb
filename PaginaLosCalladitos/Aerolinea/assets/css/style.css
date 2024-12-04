@@ -1,45 +1,106 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Fondo general */
+body {
+    background-color: #ffe6f2;
+    color: #6d213c;
+    font-family: 'Arial', sans-serif;
 }
 
-.navbar{
-    background-color: #91c77b;
+/* Navbar */
+.navbar {
+    background-color: #ff66b3;
 }
 
-.nav.link, .btn{
-    color: #FFFFFF;
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
 }
 
-#IniciarSesion{
-    background-color: #FFFF33;
-    border-radius: 20px;
+.navbar .nav-link {
+    color: #ffe6f2;
+    font-weight: 500;
 }
 
-.card{
-    background-color: #1c5dc4;
+.navbar .nav-link:hover {
+    color: #ffb3d9;
+    text-decoration: underline;
 }
 
-.page-item{
-    color: #051B54;
+/* Botón de inicio de sesión */
+#IniciarSesion {
+    background-color: #ff3385;
+    color: #ffffff;
+    border: none;
 }
 
-#list a{
-    color: #051B54;
+#IniciarSesion:hover {
+    background-color: #cc0066;
+    color: #ffe6f2;
 }
 
-#image a{
+/* Card */
+.card {
+    border: none;
+    background-color: #ffd6e0;
+    color: #6d213c;
+}
+
+.card-title {
+    color: #cc0066;
+    font-weight: bold;
+}
+
+.card-text a {
+    color: #ff3385;
     text-decoration: none;
 }
 
-#form{
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
-    margin: 10px;
-    padding: 10px;
+.card-text a:hover {
+    color: #cc0066;
+    text-decoration: underline;
 }
 
-.navbar-brand{
-    font-family: Arial, Helvetica, sans-serif;
+/* Paginación */
+.pagination .page-link {
+    background-color: #ffb3d9;
+    color: #6d213c;
+    border: none;
+}
+
+.pagination .page-link:hover {
+    background-color: #ff66b3;
+    color: #ffffff;
+}
+
+/* Formularios */
+.form-control {
+    border: 2px solid #ffb3d9;
+    color: #6d213c;
+}
+
+.form-control:focus {
+    border-color: #ff66b3;
+    box-shadow: 0 0 5px rgba(255, 102, 179, 0.5);
+}
+
+.input-group-text {
+    background-color: #ffb3d9;
+    color: #6d213c;
+    border: none;
+}
+
+/* Botón de búsqueda */
+button.btn-danger {
+    background-color: #ff3385;
+    border: none;
+}
+
+button.btn-danger:hover {
+    background-color: #cc0066;
+}
+
+/* Links activos */
+.nav-link.active {
+    color: #ffffff;
+    background-color: #cc0066;
+    border-radius: 5px;
 }
